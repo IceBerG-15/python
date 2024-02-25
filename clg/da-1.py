@@ -52,7 +52,7 @@ def bin_to_octal(num:str)->str:
 def bin_to_hex(num:str)->str:
     return dec_to_hex(bin_to_dec(num))
 #function to convert octal to decimal
-def octal_to_dec(num:str)->str:
+def octal_to_dec(num:str)->str:  
     count = 0 
     ans = 0
     for i in num[::-1]:
@@ -92,6 +92,7 @@ def hex_to_bin(num:str)->str:
 def main():
     ch = 0
     while ch!= 11:
+        print("--------------------------------------")
         print("MENU: ")
         print("1- decimal to binary \n2- decimal to octal \n3- decimal to hexadecimal")
         print("4- binary to octal \n5- binary to hexadecimal \n6- binary to decimal ")
@@ -126,6 +127,6 @@ def main():
                 exit()
             case default:
                 print("Invalid choice")
-# -----------------------------------
+# -----------------------------------------
 if __name__ == '__main__':
     main()
